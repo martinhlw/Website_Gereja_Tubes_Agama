@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 03, 2020 at 11:34 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.3
+-- Generation Time: Dec 19, 2023 at 01:18 AM
+-- Server version: 10.4.25-MariaDB
+-- PHP Version: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -21,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `developers`
 --
-CREATE DATABASE IF NOT EXISTS `developers` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `developers`;
 
 -- --------------------------------------------------------
 
@@ -30,7 +27,6 @@ USE `developers`;
 -- Table structure for table `about`
 --
 
-DROP TABLE IF EXISTS `about`;
 CREATE TABLE `about` (
   `id` int(10) NOT NULL,
   `title` varchar(100) NOT NULL,
@@ -43,7 +39,10 @@ CREATE TABLE `about` (
 --
 
 INSERT INTO `about` (`id`, `title`, `content`, `image`) VALUES
-(10, 'About Our Company', '<div id=\"pgc-w5d0dcc3394ac1-0-0\" class=\"panel-grid-cell\">\r\n<div id=\"panel-w5d0dcc3394ac1-0-0-0\" class=\"so-panel widget widget_sow-editor panel-first-child panel-last-child\" data-index=\"0\">\r\n<div class=\"so-widget-sow-editor so-widget-sow-editor-base\">\r\n<div class=\"siteorigin-widget-tinymce textwidget\">\r\n<p class=\"text_all_p_tag_css\">Pramukh Web Solution is a website design and Web development Company dedicated to provide web based solutions to all type of businesses. Located in Ahmedabad, Gujarat (India).</p>\r\n<p class=\"text_all_p_tag_css\">Pramukh Web Solution is a one stop solution for all your IT needs. It Provides full featured innovative and high quality cost effective IT web designing solutions ranging from customized web development, PHP web development, ASP.NET and all kind of programming to complete web solutions including web design, Web Development in PHP, eCommerce Solutions, Multimedia, and Print publication solutions, CSS/XHTML Web Design, Content Management, SEO (Web Promotion), Domain Registration, Web Hosting to businesses throughout the India.</p>\r\n<div id=\"pgc-w5d0dcc3394ac1-0-0\" class=\"panel-grid-cell\">\r\n<div id=\"panel-w5d0dcc3394ac1-0-0-0\" class=\"so-panel widget widget_sow-editor panel-first-child panel-last-child\" data-index=\"0\">\r\n<div class=\"so-widget-sow-editor so-widget-sow-editor-base\">\r\n<div class=\"siteorigin-widget-tinymce textwidget\">\r\n<p class=\"text_all_p_tag_css\">Pramukh Web Solution is a website design and Web development Company dedicated to provide web based solutions to all type of businesses. Located in Ahmedabad, Gujarat (India).</p>\r\n<p class=\"text_all_p_tag_css\">Pramukh Web Solution is a one stop solution for all your IT needs. It Provides full featured innovative and high quality cost effective IT web designing solutions ranging from customized web development, PHP web development, ASP.NET and all kind of programming to complete web solutions including web design, Web Development in PHP, eCommerce Solutions, Multimedia, and Print publication solutions, CSS/XHTML Web Design, Content Management, SEO (Web Promotion), Domain Registration, Web Hosting to businesses throughout the India.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>', 'condos-pool.png');
+(10, '2 TIMOTIUS 2:1-13', '<p class=\"l0\">Bacaan Setahun:&nbsp;<em><a href=\"https://alkitab.mobi/tb/passage/Yohanes+13-16\">Yohanes 13-16</a></em></p>\r\n<p class=\"l0\">Nas:&nbsp;<em>Seorang olahragawan hanya dapat memperoleh mahkota sebagai juara, apabila ia bertanding menurut peraturan-peraturan olahraga. (2 Timotius 2:5)</em></p>\r\n<hr />\r\n<p><strong>Disiplin Seorang Murid</strong></p>\r\n<div>\r\n<p>Seorang pelatih berkata, \"Menjadi tugas saya melatih, menggembleng para atlet melakukan apa yang tidak ingin mereka lakukan supaya mereka mencapai apa yang mereka impikan.\" Disiplin fisik dan mental yang diberikan pelatih kepada atlet harus dijalani dengan sangat ketat dalam pemusatan latihan. Hal ini agar atlet mempunyai kesiapan yang prima menghadapi suatu pertandingan atau kompetisi.</p>\r\n<p>Alkitab menjelaskan disiplin rohani seperti yang dijalani oleh seorang atlet. Atlet dengan keras dan disiplin diri harus melatih diri sedemikian rupa agar ia dapat memperoleh kemenangan saat pertandingan. Atlet tidak dapat mempersiapkan diri dengan seenaknya lalu berharap memenangkan kompetisi. Ia harus tunduk dengan arahan dan disiplin dari pelatih, meskipun itu pasti tidak nyaman baginya. Yesus adalah pelatih kehidupan kita. Yesus tahu persis disiplin dan latihan yang kita perlukan untuk mengejar keserupaan dengan-Nya.</p>\r\n<p>Disiplin merenungkan firman Tuhan, berpuasa mencari Tuhan, disiplin bergerak melayani orang lain, disiplin mengendalikan perkataan, disiplin memberi, disiplin kerendahan hati dan masih banyak disiplin rohani lainnya. Motif kita melakukan disiplin rohani adalah mengejar keserupaan dengan Kristus. Sering kali kita lebih menuruti keinginan hawa nafsu daripada tunduk kepada disiplin rohani. Disiplin rohani pasti tidak nyaman bagi kita. Namun ketahuilah disiplin rohani adalah harga yang harus dibayar seorang murid Kristus.</p>\r\n</div>\r\n<p>* * *<br />DISIPLIN BERTUMBUH DALAM TUHAN MEMBAWA KITA<br />MENCAPAI APA YANG TUHAN INGINKAN.</p>', 'disiplin.jpg'),
+(11, 'BILANGAN 9:15-23', '<p class=\"l0\">Bacaan Setahun:&nbsp;<em><a href=\"https://alkitab.mobi/tb/passage/Yohanes+11-12\">Yohanes 11-12</a></em></p>\r\n<p class=\"l0\">Nas:&nbsp;<em>Berapa lama pun juga awan itu diam di atas Kemah Suci, baik dua hari, baik sebulan atau lebih lama, maka orang Israel tetap berkemah dan tidak berangkat; tetapi apabila awan itu naik, barulah mereka berangkat. (Bilangan 9:22)</em></p>\r\n<hr />\r\n<p><strong>Buah Ketaatan</strong></p>\r\n<div>\r\n<p>Saat melakukan perjalanan dengan kendaraan, saya kadang melihat langsung kecelakaan yang terjadi karena satu atau dua pengendara tidak taat. Pernah ada mobil melawan arus di jalan satu arah, terjadilah tabrakan. Ada mobil menerobos palang rel kereta api yang sudah tertutup, mobil itu hancur dihantam kereta. Beruntung pengemudi dan penumpang selamat karena sempat keluar.</p>\r\n<p>Ada yang mengatakan peraturan dibuat untuk dilanggar, dan itu benar terjadi dalam kehidupan sehari-hari. Tapi sebagai orang Kristiani, marilah kita menjadi orang yang taat kepada hukum Tuhan maupun peraturan yang berlaku di sekitar kita. Bukan tanpa alasan Tuhan sengaja memerintahkan bangsa Israel berkemah di padang pasir saat melakukan perjalanan ke Kanaan. Aturan yang Tuhan buat sederhana, setiap kali awan naik dari atas Kemah Suci maka orang Israel berangkat, dan di tempat awan itu tinggal, di sanalah orang Israel berkemah (ay. 17). Atas perintah Tuhan, mereka berangkat atau berkemah (ay. 18). Ketika awan itu lama menutupi Kemah Suci, mereka tinggal, dan mereka harus memelihara kewajibannya kepada Tuhan (ay. 19). Bangsa Israel harus taat kepada Tuhan, berapa pun waktu mereka harus tetap berkemah dan tidak berangkat (ay. 22).</p>\r\n<p>Hukum-hukum Tuhan maupun hukum-hukum pemerintah memang tidak semuanya kita setuju atau kita sukai, tapi alangkah baiknya kita tetap mau menaatinya. Mari kita membiasakan diri menaati aturan-aturan yang ada di sekitar kita. Jangan sampai kita celaka dan akhirnya menyesal, karena tertimpa musibah yang terjadi akibat kita tidak mau taat. Ketaatan mendatangkan keselamatan. --RTG/www.renunganharian.net</p>\r\n</div>\r\n<p>* * *<br />PERATURAN MEMANG MEMBATASI KITA, TAPI KITA SELAMAT<br />DAN BERUNTUNG SAAT MAU MENAATINYA.</p>', 'obey.png'),
+(12, 'YOHANES12:1-8', '<p class=\"l0\">Bacaan Setahun:&nbsp;<em><a href=\"https://alkitab.mobi/tb/passage/Yohanes+9-10\">Yohanes 9-10</a></em></p>\r\n<p class=\"l0\">Nas:&nbsp;<em>Lalu kata Yesus, \"Biarkanlah dia melakukan hal ini mengingat hari penguburan-Ku.\" (Yohanes 12:7)</em></p>\r\n<hr />\r\n<p><strong>Angle</strong></p>\r\n<div>\r\n<p>Dalam dunia fotografi/sinematografi kita mendapati istilah \"angle\". Angle adalah sudut yang dipilih fotografer/cameraman untuk membidik objeknya. Berbeda angle, berbeda gambar yang dihasilkan. Dalam pembacaan kita, kita melihat dua penilaian yang berbeda, bahkan bertolak belakang terhadap satu peristiwa yang sama.</p>\r\n<p>Maria, saudara Lazarus, mencurahkan minyak narwastu murni ke kaki Yesus. Orang banyak yang menyaksikan hal itu menilai tindakan perempuan tersebut adalah pemborosan. Tetapi Yesus menilai tindakan tersebut sebagai hal yang baik. Tuhan memaknai tindakan perempuan tersebut sebagai persiapan pemakaman-Nya.</p>\r\n<p>Yudas Iskariot yang hadir ketika itu memberikan penilaian berdasarkan segi efisiensi penggunaan uang (plus nafsu korupsi yang ada pada diri Yudas, sebagai bendahara rombongan Yesus). Sedangkan Tuhan menilai berdasarkan hati tulus sang perempuan.</p>\r\n<p>Dalam kehidupan sehari-hari, kita berhadapan dengan aneka peristiwa dan tindakan orang di sekitar kita. Tentu kita terdorong untuk memberi penilaian terhadap hal itu. Biarlah kita, bagai fotografer/cameraman yang cerdas dan berjiwa seni, memilih angle yang tepat dalam menilai suatu peristiwa atau tindakan seseorang. Angle yang tidak tepat akan membuahkan penghakiman yang kejam terhadap sesuatu yang kita saksikan. Mari berdoa agar Roh Kudus mengaruniakan kita hati yang bijak sehingga kita selalu memilih angle yang tepat dalam penilaian kita terhadap sesuatu. --HPG/www.renunganharian.net</p>\r\n</div>\r\n<p>* * *<br />HATI YANG DIPENUHI ROH KUDUS<br />MEMAMPUKAN KITA BIJAK MENILAI SESUATU.</p>', 'ANGEL.jpg'),
+(13, 'Wery', '<p>aklsdjkaldjlkajkdjkdskskfskdfdjskfjskdbfkjsdbfmsbdfmdsbfjkdsfjksdhfjksdfjksdkfjbsdkfbsdfbskdfbskdbfkjsbfkjlsdfkjdsfdsfsdfsdfsdfsd</p>', 'Screenshot 2023-10-03 112647.png');
 
 -- --------------------------------------------------------
 
@@ -51,7 +50,6 @@ INSERT INTO `about` (`id`, `title`, `content`, `image`) VALUES
 -- Table structure for table `admin`
 --
 
-DROP TABLE IF EXISTS `admin`;
 CREATE TABLE `admin` (
   `aid` int(10) NOT NULL,
   `auser` varchar(50) NOT NULL,
@@ -66,11 +64,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`aid`, `auser`, `aemail`, `apass`, `adob`, `aphone`) VALUES
-(2, 'disha', 'disha@gmail.com', 'disha', '1999-02-02', '9689689698'),
-(6, 'final', 'final@gmail.com', 'final', '2020-04-29', '7979656578'),
-(7, 'test', 'test@gmail.com', 'test', '2020-04-29', '8997979765'),
-(8, 'check', 'check@gmail.com', 'check', '2020-04-29', '8979785688'),
-(9, 'admin', 'admin@gmail.com', 'admin', '1999-12-06', '9878786545');
+(11, 'Martin Halawa', 'martinhalawa12345@gmail.com', 'JustTin0', '2003-03-01', '085339080751'),
+(12, 'Martin Halawa', 'martinhalawa12345@gmail.com', '12345', '2003-01-01', '109823401487');
 
 -- --------------------------------------------------------
 
@@ -78,7 +73,6 @@ INSERT INTO `admin` (`aid`, `auser`, `aemail`, `apass`, `adob`, `aphone`) VALUES
 -- Table structure for table `city`
 --
 
-DROP TABLE IF EXISTS `city`;
 CREATE TABLE `city` (
   `cid` int(50) NOT NULL,
   `cname` varchar(100) NOT NULL,
@@ -91,8 +85,7 @@ CREATE TABLE `city` (
 
 INSERT INTO `city` (`cid`, `cname`, `sid`) VALUES
 (9, 'navi mumbai', 3),
-(10, 'vapi', 2),
-(11, 'valsad', 2);
+(11, 'Bandung', 2);
 
 -- --------------------------------------------------------
 
@@ -100,7 +93,6 @@ INSERT INTO `city` (`cid`, `cname`, `sid`) VALUES
 -- Table structure for table `contact`
 --
 
-DROP TABLE IF EXISTS `contact`;
 CREATE TABLE `contact` (
   `cid` int(50) NOT NULL,
   `name` varchar(100) NOT NULL,
@@ -110,23 +102,12 @@ CREATE TABLE `contact` (
   `message` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `contact`
---
-
-INSERT INTO `contact` (`cid`, `name`, `email`, `phone`, `subject`, `message`) VALUES
-(2, 'demo', 'demo@gmail.com', '9765989689', 'demo', 'demo'),
-(4, 'test', 'test@gmail.com', '7976976979', 'test', 'test'),
-(5, 'final', 'final@gmail.com', '7697967967', 'final', 'final'),
-(6, 'disha', 'disha@gmail.com', '7898797696', 'demo', 'demo');
-
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `feedback`
 --
 
-DROP TABLE IF EXISTS `feedback`;
 CREATE TABLE `feedback` (
   `fid` int(50) NOT NULL,
   `uid` int(50) NOT NULL,
@@ -140,11 +121,7 @@ CREATE TABLE `feedback` (
 --
 
 INSERT INTO `feedback` (`fid`, `uid`, `fdescription`, `status`, `date`) VALUES
-(2, 15, 'Magicbricks made my life easy. It helped me with the search for my first ever investment i.e. 1BHK apartment in Mira Road. Thanks to the team for providing relevant tools like EMI calculator and smart search.\r\n', 1, '2020-04-03'),
-(3, 18, 'I am young professional, Magicbricks search helped me in shortlisting property in Navi Mumbai. I learned what kind of property will cost me how much and what are the types of amenities I will be getting?', 1, '2020-04-03'),
-(4, 21, 'I was looking for a flat in Andheri and Magicbricks website helped me get one smoothly. I could choose not just the property but also check what others had to say about the area. The site is simple and user friendly.\r\n', 1, '2020-04-03'),
-(5, 23, 'The constant touch through other true calls really surprised me.They sent their officer to get the photographs of my shop & promptly posted all the pics which helped me in getting the tenant fast. Hats off to Magicbricks.\r\n', 1, '2020-04-03'),
-(6, 24, 'I moved to Mumbai from Delhi early this year and I looked online for a suitable apartment for rent in areas near my workplace in Andheri. Thanks Magicbricks for giving me so many options with Travel Time search.\r\n', 0, '2020-04-03');
+(3, 18, 'I am young professional, Magicbricks search helped me in shortlisting property in Navi Mumbai. I learned what kind of property will cost me how much and what are the types of amenities I will be getting?', 1, '2020-04-03');
 
 -- --------------------------------------------------------
 
@@ -152,7 +129,6 @@ INSERT INTO `feedback` (`fid`, `uid`, `fdescription`, `status`, `date`) VALUES
 -- Table structure for table `property`
 --
 
-DROP TABLE IF EXISTS `property`;
 CREATE TABLE `property` (
   `pid` int(50) NOT NULL,
   `title` varchar(200) NOT NULL,
@@ -207,7 +183,6 @@ INSERT INTO `property` (`pid`, `title`, `pcontent`, `type`, `bhk`, `stype`, `bed
 -- Table structure for table `state`
 --
 
-DROP TABLE IF EXISTS `state`;
 CREATE TABLE `state` (
   `sid` int(50) NOT NULL,
   `sname` varchar(100) NOT NULL
@@ -218,13 +193,7 @@ CREATE TABLE `state` (
 --
 
 INSERT INTO `state` (`sid`, `sname`) VALUES
-(2, 'gujarat'),
-(3, 'goa'),
-(4, 'maharashtra'),
-(7, 'bihar'),
-(9, 'chhattisgarh'),
-(10, 'uttar pardesh'),
-(15, 'rajasthan');
+(2, 'Indonesia');
 
 -- --------------------------------------------------------
 
@@ -232,7 +201,6 @@ INSERT INTO `state` (`sid`, `sname`) VALUES
 -- Table structure for table `user`
 --
 
-DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `uid` int(50) NOT NULL,
   `uname` varchar(100) NOT NULL,
@@ -255,7 +223,8 @@ INSERT INTO `user` (`uid`, `uname`, `uemail`, `uphone`, `upass`, `utype`, `uimag
 (22, 'disha', 'disha1@gmail.com', '8997897869', 'disha', 'agent', '1.jpg'),
 (23, 'testing', 'testing@gmail.com', '9869596597', 'testing', 'builder', '1.jpg'),
 (24, 'some', 'some@gmail.com', '9689698697', 'some', 'builder', '3.jpg'),
-(25, 'test', 'test12@gmail.com', '9798678969', 'test', 'builder', 'avatar-3.jpg');
+(25, 'test', 'test12@gmail.com', '9798678969', 'test', 'builder', 'avatar-3.jpg'),
+(28, 'firhan', 'firhan21313@gmail.com', '0129319031', 'firhan123', 'user', 'condos-pool.png');
 
 --
 -- Indexes for dumped tables
@@ -317,13 +286,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `about`
 --
 ALTER TABLE `about`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `aid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `aid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `city`
@@ -359,7 +328,7 @@ ALTER TABLE `state`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `uid` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `uid` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
