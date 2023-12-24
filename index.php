@@ -37,7 +37,7 @@ include("config.php");
 
 <!--	Title
 	=========================================================-->
-<title>Ardes.Studio</title>
+<title>Selamat datang di Gereja kami!</title>
 </head>
 <body>
 
@@ -58,23 +58,34 @@ include("config.php");
         <!--	Header end  -->
 		
         <!--	Banner Start   -->
-        <div class="overlay-black w-100 slider-banner1 position-relative" style="background-image: url('images/banner/04.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+        <div class="overlay-black w-100 slider-banner1 position-relative" style="background-image: url('images/dashboard.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-lg-12">
                         <div class="text-white">
-                            <h1 class="mb-4"><span class="text-primary">Find</span><br>
-                                Your dream house</h1>
-                            <form method="post" action="propertygrid.php">
-                                <div class="row">
-                                    
+                            <h1 class="mb-4"><span class="text-primary">Selamat datang</span><br>
+                                di website Gereja kami</h1>
+                                <div class="row">       
                                     <div class="col-md-4 col-lg-2">
                                         <div class="form-group">
-                                            <button type="submit" name="filter" class="btn btn-primary w-100">Search Property</button>
+                                            <button type="submit" name="filter" class="btn btn-primary w-100" id="scrollButton">Telusuri</button>
+
+                                            <script>
+                                                document.getElementById("scrollButton").addEventListener("click", scrollFormulir);
+
+                                                function scrollFormulir() {
+                                                    var formulirElement = document.getElementById("formulir");
+
+                                                    if (formulirElement) {
+                                                        formulirElement.scrollIntoView({ behavior: "smooth" });
+                                                    } else {
+                                                        console.error("Element with ID 'formulir' not found.");
+                                                    }
+                                                }
+                                            </script>
                                         </div>
                                     </div>
                                 </div>
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -82,13 +93,13 @@ include("config.php");
         </div>
         <!--	Banner End  -->
         
-        <!--	Text Block One
+        <!-- Text Block One
 		======================================================-->
-        <div class="full-row bg-gray">
+        <div class="full-row bg-gray" form id="formulir">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="text-secondary double-down-line text-center mb-5">What We Do</h2></div>
+                        <h2 class="text-secondary double-down-line text-center mb-5">Jadwal Ibadah</h2></div>
                 </div>
                 
                 <div class="text-box-one">
@@ -96,58 +107,86 @@ include("config.php");
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
 								<i class="flaticon-rent text-primary flat-medium" aria-hidden="true"></i>
-                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">Bangun dari 0</a></h5>
-                                <p>Buat desain bangunan impian anda dari 0 dengan layanan dari kami ya itu build from 0 agar bangunan yang di inginkan sesuai</p>
+                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">Ibadah Umum I</a></h5>
+                                <p>Pukul 09.00 bertempat di Ruang Ibadah Utama</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
 								<i class="flaticon-for-rent text-primary flat-medium" aria-hidden="true"></i>
-                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">Renovasi bangunan</a></h5>
-                                <p>Renovasi desain bangunan yang sudah ada dengan menggunakan jasa desain bangunan dengan layanan Renovation.</p>
+                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">Ibadah Umum II</a></h5>
+                                <p>Pukul 17.00 bertempat di Ruang Ibadah Utama</a></h5>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
 								<i class="flaticon-list text-primary flat-medium" aria-hidden="true"></i>
-                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">Konsultasi</a></h5>
-                                <p>Konsultasikan desain bangunan yang anda inginkan dengan ahli nya.</p>
+                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">Ibadah Remaja</a></h5>
+                                <p>Pukul 09.00 bertempat di Lt.3 Gedung A</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
 								<i class="flaticon-list text-primary flat-medium" aria-hidden="true"></i>
-                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">price</a></h5>
-                                <p>kami seusikan harga dengan kondisi uang anda.</p>
+                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">Sekolah Minggu</a></h5>
+                                <p>Pukul 09.00 bertempat di Ruang Sekolah Minggu</p>
                             </div>
+                        </div>
                     </div>
                 </div>
                 
             </div>
-        </div>
+        </div> 
 		<!-----  Our Services  ---->
+
+        <div class="full-row living bg-one overlay-secondary-half" style="background-image: url('images/haddyliving.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="living-list pr-4">
+                            <h3 class="pb-4 mb-3 text-white">VISI dan MISI</h3>
+                            <ul>
+                                <li class="mb-4 text-white d-flex"> 
+									<i class="flaticon-reward flat-medium float-left d-table mr-4 text-primary" aria-hidden="true"></i>
+									<div class="pl-2">
+										<h5 class="mb-3">Visi</h5>
+										<p>"Isi ayat alkitab"</p>
+									</div>
+                                </li>
+                                <li class="mb-4 text-white d-flex"> 
+									<i class="flaticon-real-estate flat-medium float-left d-table mr-4 text-primary" aria-hidden="true"></i>
+									<div class="pl-2">
+										<h5 class="mb-3">Misi</h5>
+										<p>"Isi ayat alkitab"</p>
+									</div>
+                                </li>
+                                <li class="mb-4 text-white d-flex"> 
+									<i class="flaticon-seller flat-medium float-left d-table mr-4 text-primary" aria-hidden="true"></i>
+									<div class="pl-2">
+										<h5 class="mb-3">Experience Quality</h5>
+										<p>Pengalaman tinggal di sebuah bangunan berkualitas adalah harmoni antara fasilitas modern, kenyamanan, dan gaya hidup yang terinspirasi.</p>
+									</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 		
         <!--	Recent Properties  -->
         <div class="full-row">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="text-secondary double-down-line text-center mb-4">Recent Property</h2>
+                        <h2 class="text-secondary double-down-line text-center mb-4">Berita Gereja</h2>
                     </div>
-                    <!--- <div class="col-md-6">
-                        <ul class="nav property-btn float-right" id="pills-tab" role="tablist">
-                            <li class="nav-item"> <a class="nav-link py-3 active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">New</a> </li>
-                            <li class="nav-item"> <a class="nav-link py-3" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Featured</a> </li>
-                            <li class="nav-item"> <a class="nav-link py-3" id="pills-contact-tab2" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Top Sale</a> </li>
-                            <li class="nav-item"> <a class="nav-link py-3" id="pills-contact-tab3" data-toggle="pill" href="#pills-resturant" role="tab" aria-controls="pills-contact" aria-selected="false">Best Sale</a> </li>
-                        </ul>
-                    </div> --->
                     <div class="col-md-12">
                         <div class="tab-content mt-4" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home">
                                 <div class="row">
 								
-									<?php $query=mysqli_query($con,"SELECT property.*, user.uname,user.utype,user.uimage FROM `property`,`user` WHERE property.uid=user.uid ORDER BY date DESC LIMIT 9");
+									<?php $query=mysqli_query($con,"SELECT berita.*, user.uname,user.utype,user.uimage FROM `berita`,`user` WHERE berita.uid=user.uid ORDER BY date DESC LIMIT 9");
 										while($row=mysqli_fetch_array($query))
 										{
 									?>
@@ -195,43 +234,10 @@ include("config.php");
 		<!--	Recent Properties  -->
         
         <!--	Why Choose Us -->
-        <div class="full-row living bg-one overlay-secondary-half" style="background-image: url('images/haddyliving.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-6">
-                        <div class="living-list pr-4">
-                            <h3 class="pb-4 mb-3 text-white">Why Choose Us</h3>
-                            <ul>
-                                <li class="mb-4 text-white d-flex"> 
-									<i class="flaticon-reward flat-medium float-left d-table mr-4 text-primary" aria-hidden="true"></i>
-									<div class="pl-2">
-										<h5 class="mb-3">Experience Quality</h5>
-										<p>Dari awal hingga akhir, setiap detilnya begitu memikat dan memuaskan. Desainnya yang elegan dan fungsional, bersama dengan fitur-fitur canggih yang disediakan, memberikan pengalaman pengguna yang tak tertandingi. Tidak hanya itu, performanya juga luar biasa, memberikan respons yang cepat dan lancar dalam setiap tugas yang saya lakukan. Dalam setiap interaksi, saya bisa merasakan betapa seriusnya perusahaan ini dalam menyajikan kualitas terbaik bagi pengguna. Secara keseluruhan, pengalaman menggunakan produk ini benar-benar mengesankan dan membuat saya merasa yakin bahwa saya telah membuat pilihan yang tepat.</p>
-									</div>
-                                </li>
-                                <li class="mb-4 text-white d-flex"> 
-									<i class="flaticon-real-estate flat-medium float-left d-table mr-4 text-primary" aria-hidden="true"></i>
-									<div class="pl-2">
-										<h5 class="mb-3">Experience Quality</h5>
-										<p>Pengalaman menggunakan produk ini luar biasa! Desain elegan, fitur canggih, dan performa luar biasa memberikan kepuasan tak terkalahkan. Setiap interaksi memancarkan dedikasi perusahaan untuk memberikan kualitas terbaik. Saya yakin telah membuat pilihan yang tepat!</p>
-									</div>
-                                </li>
-                                <li class="mb-4 text-white d-flex"> 
-									<i class="flaticon-seller flat-medium float-left d-table mr-4 text-primary" aria-hidden="true"></i>
-									<div class="pl-2">
-										<h5 class="mb-3">Experience Quality</h5>
-										<p>Pengalaman tinggal di sebuah bangunan berkualitas adalah harmoni antara fasilitas modern, kenyamanan, dan gaya hidup yang terinspirasi.</p>
-									</div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
 		<!--	why choose us -->
 		
-		<!--	How it work -->
+	    <!-- How it work 
         <div class="full-row">
             <div class="container">
                 <div class="row">
@@ -266,12 +272,11 @@ include("config.php");
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         
         <!--	How It Work -->
         
-        <!--	Achievement
-        ============================================================-->
+        <!-- Achievement
         <div class="full-row overlay-secondary" style="background-image: url('images/counterbg.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
             <div class="container">
                 <div class="fact-counter">
@@ -294,7 +299,7 @@ include("config.php");
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         
 
 		

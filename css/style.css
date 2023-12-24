@@ -718,7 +718,7 @@ p {
 }
 a, a:hover, .btn-link, .btn-link:hover {
 	text-decoration: none;
-	cousor: pointer
+	cursor: pointer
 }
 img {
 	width: 100%

@@ -65,7 +65,7 @@ include("config.php");
                     <div class="col-md-6">
                         <nav aria-label="breadcrumb" class="float-left float-md-right">
                             <ol class="breadcrumb bg-transparent m-0 p-0">
-                                <li class="breadcrumb-item text-white"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item text-white"><a href="#">Beranda</a></li>
                                 <li class="breadcrumb-item active">Renungan Harian</li>
                             </ol>
                         </nav>
@@ -82,7 +82,7 @@ include("config.php");
 				
 				<?php 
 					
-					$query=mysqli_query($con,"SELECT * FROM about");
+					$query=mysqli_query($con,"SELECT * FROM renungan");
 					while($row=mysqli_fetch_array($query))
 					{
 				?>

@@ -13,7 +13,7 @@
                                 </div>
                                 <div class="col-md-12 col-lg-8">
                                     <div class="row">
-                                        <div class="col-md-4 col-lg-4">
+                                        <!-- <div class="col-md-4 col-lg-4">
                                             <div class="footer-widget footer-nav mb-4">
                                                 <h4 class="widget-title text-white double-down-line-left position-relative">Support</h4>
                                                 <ul class="hover-text-primary">
@@ -38,12 +38,12 @@
                                                     <li><a href="#" class="text-white">Our Agents</a></li>
                                                 </ul>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="col-md-4 col-lg-4">
                                             <div class="footer-widget">
                                                 <h4 class="widget-title text-white double-down-line-left position-relative">Contact Us</h4>
                                                 <ul class="text-white">
-                                                    <li class="hover-text-primary"><i class="fas fa-map-marker-alt text-white mr-2 font-13 mt-1"></i>jl. phh.mustofa no 365, Bandung, jawa barat</li>
+                                                    <li class="hover-text-primary"><i class="fas fa-map-marker-alt text-white mr-2 font-13 mt-1"></i>Jl. PHH. MUstofa</li>
                                                     <li class="hover-text-primary"> <i class="fas fa-phone-alt text-white mr-2 font-13 mt-1"></i>+6285314956364</li>
 													<li class="hover-text-primary"> <i class="fas fa-phone-alt text-white mr-2 font-13 mt-1"></i>+621903045973</li>
                                                     <li class="hover-text-primary"><i class="fas fa-envelope text-white mr-2 font-13 mt-1"></i>ardes.studio@gmail.com</li>
@@ -58,14 +58,7 @@
                     </div>
                 </div>
                 <div class="row copyright">
-                    <div class="col-sm-6"> <span class="text-white">© 2023-2024 ARRDES.STUDIO ALL RIGHT SERVED</span> </div>
-                    <div class="col-sm-6">
-                        <ul class="line-menu text-white hover-text-primary float-right">
-                            <li><a href="#">Privacy & Policy</a></li>
-                            <li>|</li>
-                            <li><a href="#"> Site Map</a></li>
-                        </ul>
-                    </div>
+                    <div class="col-sm-6"> <span class="text-white">© 2023-2024 GEREJA ALL RIGHT SERVED</span> </div>
                 </div>
             </div>
         </footer>
