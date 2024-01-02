@@ -6,7 +6,7 @@
                             <div class="row">
                                 <div class="col-md-12 col-lg-4">
                                     <div class="footer-widget mb-4">
-                                        <div class="footer-logo mb-4"> <a href="#"><img class="logo-bottom" src="images/logo/logo-white.png" alt="image"></a> </div>
+                                        <div class="footer-logo mb-4"> <a href="#"><img class="logo-bottom" src="images/logo/Logo-Gereja.png" alt="image"></a> </div>
                                         <p class="pb-20 text-white">Property tidak hanya sekedar aset, tetapi juga wujud dari impian, tujuan, dan perencanaan jangka panjang.</p>
 										<p class="pb-20 text-white">Mempunyai property adalah sebuah kebanggaan, melambangkan kemampuan kita untuk mencapai tujuan kehidupan.</p>
                                         </div>
@@ -44,9 +44,9 @@
                                                 <h4 class="widget-title text-white double-down-line-left position-relative">Contact Us</h4>
                                                 <ul class="text-white">
                                                     <li class="hover-text-primary"><i class="fas fa-map-marker-alt text-white mr-2 font-13 mt-1"></i>Jl. PHH. MUstofa</li>
-                                                    <li class="hover-text-primary"> <i class="fas fa-phone-alt text-white mr-2 font-13 mt-1"></i>+6285314956364</li>
-													<li class="hover-text-primary"> <i class="fas fa-phone-alt text-white mr-2 font-13 mt-1"></i>+621903045973</li>
-                                                    <li class="hover-text-primary"><i class="fas fa-envelope text-white mr-2 font-13 mt-1"></i>ardes.studio@gmail.com</li>
+                                                    <li class="hover-text-primary"> <i class="fas fa-phone-alt text-white mr-2 font-13 mt-1"></i>+62352353443</li>
+													<li class="hover-text-primary"> <i class="fas fa-phone-alt text-white mr-2 font-13 mt-1"></i>+62121151312</li>
+                                                    <li class="hover-text-primary"><i class="fas fa-envelope text-white mr-2 font-13 mt-1"></i>your.church@gmail.com</li>
                                                 </ul>
                                             </div>
                                             <div class="footer-widget media-widget mt-4 text-white hover-text-primary"> <a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-google-plus-g"></i></a> <a href="#"><i class="fab fa-linkedin-in"></i></a> <a href="#"><i class="fas fa-rss"></i></a> </div>

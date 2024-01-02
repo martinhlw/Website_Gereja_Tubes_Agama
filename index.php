@@ -106,28 +106,28 @@ include("config.php");
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
-								<i class="flaticon-rent text-primary flat-medium" aria-hidden="true"></i>
+								<img src="images\logo\church.png" alt="Description of the image" class="flaticon-rent text-primary flat-medium custom-size" aria-hidden="true">
                                 <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">Ibadah Umum I</a></h5>
                                 <p>Pukul 09.00 bertempat di Ruang Ibadah Utama</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
-								<i class="flaticon-for-rent text-primary flat-medium" aria-hidden="true"></i>
+                                <img src="images\logo\church.png" alt="Description of the image" class="flaticon-rent text-primary flat-medium custom-size" aria-hidden="true">
                                 <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">Ibadah Umum II</a></h5>
                                 <p>Pukul 17.00 bertempat di Ruang Ibadah Utama</a></h5>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
-								<i class="flaticon-list text-primary flat-medium" aria-hidden="true"></i>
-                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">Ibadah Remaja</a></h5>
+                                <img src="images\logo\family.png" alt="Description of the image" class="flaticon-rent text-primary flat-medium custom-size" aria-hidden="true"> 
+                                <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">Ibadah Pemuda</a></h5>
                                 <p>Pukul 09.00 bertempat di Lt.3 Gedung A</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
-								<i class="flaticon-list text-primary flat-medium" aria-hidden="true"></i>
+                                <img src="images\logo\family-member.png" alt="Description of the image" class="flaticon-rent text-primary flat-medium custom-size" aria-hidden="true">
                                 <h5 class="text-secondary hover-text-primary py-3 m-0"><a href="#">Sekolah Minggu</a></h5>
                                 <p>Pukul 09.00 bertempat di Ruang Sekolah Minggu</p>
                             </div>
