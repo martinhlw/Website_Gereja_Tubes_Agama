@@ -1,33 +1,35 @@
 <?php 
-session_start();
-include("config.php");
-$error="";
-$msg="";
-if(isset($_REQUEST['login']))
-{
-	$email=$_REQUEST['email'];
-	$pass=$_REQUEST['pass'];
-	
-	
-	if(!empty($email) && !empty($pass))
+	session_start();
+	include("config.php");
+	$error="";
+	$msg="";
+	if(isset($_REQUEST['login']))
 	{
-		$sql = "SELECT * FROM user where uemail='$email' && upass='$pass'";
-		$result=mysqli_query($con, $sql);
-		$row=mysqli_fetch_array($result);
-		   if($row){
-			   
-				$_SESSION['uid']=$row['uid'];
-				$_SESSION['uemail']=$email;
-				header("location:index.php");
+		$email=$_REQUEST['email'];
+		$pass=$_REQUEST['pass'];
+		
+		
+		if(!empty($email) && !empty($pass))
+		{
+			$sql = "SELECT * FROM user where uemail='$email' && upass='$pass'";
+			$result=mysqli_query($con, $sql);
+			$row=mysqli_fetch_array($result);
+			if($row){
 				
-		   }
-		   else{
-			   $error = "<p class='alert alert-warning'>Login Not Successfully</p> ";
-		   }
-	}else{
-		$error = "<p class='alert alert-warning'>Please Fill all the fields</p>";
+					$_SESSION['uid']=$row['uid'];
+					$_SESSION['uemail']=$email;
+
+					$msg = "<p class='alert alert-success'>Login Successful</p>";
+					header("location:index.php");
+					
+			}
+			else{
+				$error = "<p class='alert alert-warning'>Login Not Successfully</p> ";
+			}
+		}else{
+			$error = "<p class='alert alert-warning'>Please Fill all the fields</p>";
+		}
 	}
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">

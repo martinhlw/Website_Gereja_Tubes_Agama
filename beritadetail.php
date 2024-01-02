@@ -40,7 +40,7 @@ include("config.php");
 
 <!--	Title
 	=========================================================-->
-<title>Ardes.Studio</title>
+<title>Berita Gereja</title>
 </head>
 <body>
 
