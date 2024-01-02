@@ -110,22 +110,21 @@ if(isset($_POST['send']))
                                 <li class="d-flex mb-4"> <i class="fas fa-map-marker-alt text-white mr-2 font-13 mt-1"></i>
                                     <div class="contact-address">
                                         <h5 class="text-white">Address</h5>
-                                        <span class="text-secondary">Jln. PHH.Mustofa No.365, Bandung, Jawa Barat</span> 
-										<span class="text-secondary">Jln. PHH.Mustofa No.365, Bandung, Jawa Barat</span>
+                                        <span class="text-secondary">Jl. Kemuning Raya 120A</span> 
 										</div>
                                 </li>
                                 <li class="d-flex mb-4"> <i class="fas fa-phone-alt text-white mr-2 font-13 mt-1"></i>
                                     <div class="contact-address">
                                         <h5 class="text-white">Call Us</h5>
-                                        <span class="d-table text-secondary">+6285314956364</span>
-										<span class="text-secondary">+621903045973</span>
+                                        <span class="d-table text-secondary">+628120192102(Pdt. Petrus)</span>
+										<span class="text-secondary">+628129128192121(Pdt. Amanda)</span>
+										<span class="text-secondary">+62190301(Kantor Gereja)</span>
 									</div>
                                 </li>
                                 <li class="d-flex mb-4"> <i class="fas fa-envelope text-white mr-2 font-13 mt-1"></i>
                                     <div class="contact-address">
                                         <h5 class="text-white">Email Adderss</h5>
-										<span class="d-table text-secondary">ardes.studio@gmail.com</span>
-										<span class="text-secondary">ardes.studio@gmail.com</span>
+										<span class="text-secondary">kantor@yourchurch.org</span>
 										</div>
                                 </li>
                             </ul>
@@ -136,7 +135,8 @@ if(isset($_POST['send']))
 						<div class="container">
                         <div class="row">
 							<div class="col-lg-12">
-								<h2 class="text-secondary double-down-line text-center mb-5">Get In Touch</h2>
+								<h2 class = "text-center mb-5">Get In Touch</h2>
+								<p class="text-secondary double-down-line text-center mb-5">Bagi jemaat yang mempunyai kritik dan saran bisa mengisi formulir di bawah ini</p>
 								<?php echo $msg; ?><?php echo $error; ?>
 							</div>
 						</div>

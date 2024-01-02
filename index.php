@@ -150,21 +150,22 @@ include("config.php");
 									<i class="flaticon-reward flat-medium float-left d-table mr-4 text-primary" aria-hidden="true"></i>
 									<div class="pl-2">
 										<h5 class="mb-3">Visi</h5>
-										<p>"Isi ayat alkitab"</p>
+										<p>Membangun Komunitas yang Mengasihi dan Menjadi Saksi Kristus</p>
 									</div>
                                 </li>
                                 <li class="mb-4 text-white d-flex"> 
 									<i class="flaticon-real-estate flat-medium float-left d-table mr-4 text-primary" aria-hidden="true"></i>
 									<div class="pl-2">
 										<h5 class="mb-3">Misi</h5>
-										<p>"Isi ayat alkitab"</p>
-									</div>
-                                </li>
-                                <li class="mb-4 text-white d-flex"> 
-									<i class="flaticon-seller flat-medium float-left d-table mr-4 text-primary" aria-hidden="true"></i>
-									<div class="pl-2">
-										<h5 class="mb-3">Experience Quality</h5>
-										<p>Pengalaman tinggal di sebuah bangunan berkualitas adalah harmoni antara fasilitas modern, kenyamanan, dan gaya hidup yang terinspirasi.</p>
+                                        <h6>1. Menyebarkan Injil</h6>
+                                        <p>Menjangkau mereka yang belum mengenal Yesus Kristus dengan berbagai cara, seperti misi ke luar negeri, kampanye evangelisasi, dan program pengajaran Alkitab.</p>
+
+                                        <h6>2. Membangun Kedewasaan Rohani"</h6>
+                                        <p>Memberdayakan anggota gereja untuk tumbuh dalam iman dan menyediakan sumber daya rohaniah, seperti kelas-kelas Alkitab, konseling, dan kelompok kecil.</p>
+
+                                        <h6>3. Melayani Kebutuhan Masyarakat"</h6>
+                                        <p>Menanggapi kebutuhan fisik dan sosial di komunitas setempat melalui program-program kemanusiaan, seperti dapur umum, bantuan bagi yang membutuhkan, dan kemitraan dengan organisasi amal.</p>
+
 									</div>
                                 </li>
                             </ul>
@@ -193,16 +194,12 @@ include("config.php");
 								
                                     <div class="col-md-6 col-lg-4">
                                         <div class="featured-thumb hover-zoomer mb-4">
-                                            <div class="overlay-black overflow-hidden position-relative"> <img src="admin/property/<?php echo $row['18'];?>" alt="pimage">
-                                                <div class="featured bg-primary text-white">New</div>
-                                                <div class="sale bg-secondary text-white text-capitalize">For <?php echo $row['5'];?></div>
-                                                <div class="price text-primary"><b>Rp.<?php echo $row['13'];?> </b><span class="text-white"><?php echo $row['12'];?> M<sup>2</sup></span></div>
-                                            </div>
+                                            <div class="overlay-black overflow-hidden position-relative"> <img src="admin/property/<?php echo $row['18'];?>" alt="pimage"></div>
                                             <div class="featured-thumb-data shadow-one">
                                                 <div class="p-3">
                                                     <h5 class="text-secondary hover-text-primary mb-2 text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h5>
-                                                    <span class="location text-capitalize"><i class="fas fa-map-marker-alt text-primary"></i> <?php echo $row['14'];?></span> </div>
-                                                <div class="bg-gray quantity px-4 pt-4">
+                                                    <span class="location text-capitalize"><?php echo $row['14'];?></span> </div>
+                                                <!-- <div class="bg-gray quantity px-4 pt-4">
                                                     <ul>
                                                         <li><span><?php echo $row['12'];?></span> M<sup>2</sup></li>
                                                         <li><span><?php echo $row['6'];?></span> Beds</li>
@@ -211,10 +208,9 @@ include("config.php");
                                                         <li><span><?php echo $row['8'];?></span> Balcony</li>
                                                         
                                                     </ul>
-                                                </div>
+                                                </div> -->
                                                 <div class="p-4 d-inline-block w-100">
                                                     <div class="float-left text-capitalize"><i class="fas fa-user text-primary mr-1"></i>By : <?php echo $row['uname'];?></div>
-                                                    <div class="float-right"><i class="far fa-calendar-alt text-primary mr-1"></i> 6 Months Ago</div>
                                                 </div>
                                             </div>
                                         </div>

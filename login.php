@@ -123,25 +123,14 @@ if(isset($_REQUEST['login']))
 									<div class="form-group">
 										<input type="password" name="pass"  class="form-control" placeholder="Your Password">
 									</div>
-									
-										<button class="btn btn-primary" name="login" value="Login" type="submit">Login</button>
-									
+										<button class="btn btn-primary" name="login" value="login" type="submit">Login</button>
 								</form>
 								
 								<div class="login-or">
 									<span class="or-line"></span>
 									<span class="span-or">or</span>
 								</div>
-								
-								<!-- Social Login -->
-								<!-- <div class="social-login">
-									<span>Login with</span>
-									<a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-									<a href="#" class="google"><i class="fab fa-google"></i></a>
-									<a href="#" class="facebook"><i class="fab fa-twitter"></i></a>
-									<a href="#" class="google"><i class="fab fa-instagram"></i></a>
-								</div> -->
-								<!-- /Social Login -->
+							
 								
 								<div class="text-center dont-have">Don't have an account? <a href="register.php">Register</a></div>
 								

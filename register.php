@@ -151,14 +151,9 @@ if(isset($_REQUEST['reg']))
 									</div>
 									<div class="form-check-inline">
 									  <label class="form-check-label">
-										<input type="radio" class="form-check-input" name="utype" value="agent">Agent
+										<input type="radio" class="form-check-input" name="utype" value="agent">Admin
 									  </label>
 									</div>
-									<div class="form-check-inline disabled">
-									  <label class="form-check-label">
-										<input type="radio" class="form-check-input" name="utype" value="builder">Builder
-									  </label>
-									</div> 
 									
 									<div class="form-group">
 										<label class="col-form-label"><b>User Image</b></label>
@@ -174,15 +169,6 @@ if(isset($_REQUEST['reg']))
 									<span class="span-or">or</span>
 								</div>
 								
-								<!-- Social Login -->
-								<div class="social-login">
-									<span>Register with</span>
-									<a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-									<a href="#" class="google"><i class="fab fa-google"></i></a>
-									<a href="#" class="facebook"><i class="fab fa-twitter"></i></a>
-									<a href="#" class="google"><i class="fab fa-instagram"></i></a>
-								</div>
-								<!-- /Social Login -->
 								
 								<div class="text-center dont-have">Already have an account? <a href="login.php">Login</a></div>
 								
