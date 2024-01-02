@@ -88,7 +88,7 @@ include("config.php");
                 <div class="row">
 				
 					<?php
-						$id=$_REQUEST['pid']; 
+						$id = isset($_REQUEST['pid']) ? $_REQUEST['pid'] : null;
 						$query=mysqli_query($con,"SELECT berita.*, user.* FROM `berita`,`user` WHERE berita.uid=user.uid and pid='$id'");
 						while($row=mysqli_fetch_array($query))
 						{
