@@ -36,7 +36,7 @@ include("config.php");
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
 <!-- Title -->
-<title>Ardes.Studio</title>
+<title>Renungan Harian</title>
 </head>
 <body>
 

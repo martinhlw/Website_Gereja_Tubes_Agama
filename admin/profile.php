@@ -14,10 +14,10 @@ if(!isset($_SESSION['auser']))
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>LM HOMES | Profile</title>
+        <title>Admin - Profile</title>
 		
 		<!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 		
 		<!-- Bootstrap CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -89,16 +89,6 @@ if(!isset($_SESSION['auser']))
 									</div>
 
 								</div>
-							</div>
-							<div class="profile-menu">
-								<ul class="nav nav-tabs nav-tabs-solid">
-									<li class="nav-item">
-										<a class="nav-link active" data-toggle="tab" href="#per_details_tab">About</a>
-									</li>
-								<!--	<li class="nav-item">
-										<a class="nav-link" data-toggle="tab" href="#password_tab">Password</a>
-									</li>  -->
-								</ul>
 							</div>	
 							<div class="tab-content profile-tab-cont">
 								
@@ -126,13 +116,6 @@ if(!isset($_SESSION['auser']))
 														<p class="col-sm-3 text-muted text-sm-right mb-0 mb-sm-3">Mobile</p>
 														<p class="col-sm-9"><?php echo $row['5']; ?></p>
 													</div>
-													<div class="row">
-														<p class="col-sm-3 text-muted text-sm-right mb-0">Address</p>
-														<p class="col-sm-9 mb-0">4663  Agriculture Lane,<br>
-														Miami,<br>
-														Gujarat - 33165,<br>
-														India.</p>
-													</div>
 												</div>
 											</div>
 										</div>
@@ -151,25 +134,7 @@ if(!isset($_SESSION['auser']))
 											</div>
 											<!-- /Account Status -->
 
-											<!-- Skills -->
-											<div class="card">
-												<div class="card-body">
-													<h5 class="card-title d-flex justify-content-between">
-														<span>Skills </span> 
-														
-													</h5>
-													<div class="skill-tags">
-														<span>Html5</span>
-														<span>CSS3</span>
-														<span>Bootstrap</span>
-														<span>Javascript</span>
-														<span>Jquery</span>
-														<span>PHP</span>
-														<span>Mysql</span>
-														<span>ASP</span>
-													</div>
-												</div>
-											</div>
+
 											<!-- /Skills -->
 
 										</div>

@@ -22,7 +22,7 @@ if(isset($_POST['addabout']))
 
 	move_uploaded_file($temp_name1,"upload/$aimage");
 	
-	$sql="insert into about (title,content,image) values('$title','$content','$aimage')";
+	$sql="insert into renungan (title,content,image) values('$title','$content','$aimage')";
 	$result=mysqli_query($con,$sql);
 	if($result)
 		{
@@ -42,10 +42,10 @@ if(isset($_POST['addabout']))
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>LM HOMES | About</title>
+        <title>Tambah Renungan</title>
 		
 		<!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/church.ico">
 		
 		<!-- Bootstrap CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -84,10 +84,10 @@ if(isset($_POST['addabout']))
 					<div class="page-header">
 						<div class="row">
 							<div class="col">
-								<h3 class="page-title">About</h3>
+								<h3 class="page-title">Renungan</h3>
 								<ul class="breadcrumb">
 									<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-									<li class="breadcrumb-item active">About</li>
+									<li class="breadcrumb-item active">Tambah Renungan</li>
 								</ul>
 							</div>
 						</div>
@@ -98,13 +98,13 @@ if(isset($_POST['addabout']))
 						<div class="col-md-12">
 							<div class="card">
 								<div class="card-header">
-									<h2 class="card-title">About Us</h2>
+									<h2 class="card-title">Renungan</h2>
 								</div>
 								<form method="post" enctype="multipart/form-data">
 								<div class="card-body">
 										<div class="row">
 											<div class="col-xl-12">
-												<h5 class="card-title">About Us </h5>
+												<h5 class="card-title">Renungan</h5>
 												<?php echo $error; ?>
 												<?php echo $msg; ?>
 												<div class="form-group row">

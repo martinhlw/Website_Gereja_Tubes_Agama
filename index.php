@@ -187,7 +187,8 @@ include("config.php");
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home">
                                 <div class="row">
 								
-									<?php $query=mysqli_query($con,"SELECT berita.*, user.uname,user.utype,user.uimage FROM `berita`,`user` WHERE berita.uid=user.uid ORDER BY date DESC LIMIT 9");
+									<?php 
+                                    $query=mysqli_query($con,"SELECT berita.*, admin.auser FROM `berita`, `admin` WHERE berita.uid = admin.aid ORDER BY date DESC LIMIT 9");
 										while($row=mysqli_fetch_array($query))
 										{
 									?>
@@ -198,19 +199,9 @@ include("config.php");
                                             <div class="featured-thumb-data shadow-one">
                                                 <div class="p-3">
                                                     <h5 class="text-secondary hover-text-primary mb-2 text-capitalize"><a href="beritadetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h5>
-                                                    <span class="location text-capitalize"><?php echo $row['14'];?></span> </div>
-                                                <!-- <div class="bg-gray quantity px-4 pt-4">
-                                                    <ul>
-                                                        <li><span><?php echo $row['12'];?></span> M<sup>2</sup></li>
-                                                        <li><span><?php echo $row['6'];?></span> Beds</li>
-                                                        <li><span><?php echo $row['7'];?></span> Baths</li>
-                                                        <li><span><?php echo $row['9'];?></span> Kitchen</li>
-                                                        <li><span><?php echo $row['8'];?></span> Balcony</li>
-                                                        
-                                                    </ul>
-                                                </div> -->
+                                                    <span><?php echo substr($row['2'], 0, 100); ?></span> </div>
                                                 <div class="p-4 d-inline-block w-100">
-                                                    <div class="float-left text-capitalize"><i class="fas fa-user text-primary mr-1"></i>By : <?php echo $row['uname'];?></div>
+                                                    <div class="float-left text-capitalize"><i class="fas fa-user text-primary mr-1"></i>By : <?php echo $row['auser'];?></div>
                                                 </div>
                                             </div>
                                         </div>

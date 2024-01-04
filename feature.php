@@ -41,7 +41,7 @@ if(!isset($_SESSION['uemail']))
 
 <!--	Title
 	=========================================================-->
-<title>Ardes.Studio</title>
+<title>Your Church</title>
 </head>
 <body>
 

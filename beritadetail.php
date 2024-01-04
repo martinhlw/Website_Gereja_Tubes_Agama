@@ -89,7 +89,7 @@ include("config.php");
 				
 					<?php
 						$id = isset($_REQUEST['pid']) ? $_REQUEST['pid'] : null;
-						$query=mysqli_query($con,"SELECT berita.*, user.* FROM `berita`,`user` WHERE berita.uid=user.uid and pid='$id'");
+						$query=mysqli_query($con,"SELECT berita.*, admin.auser FROM `berita`, `admin` WHERE berita.uid=admin.aid and berita.pid='$id'");
 						while($row=mysqli_fetch_array($query))
 						{
 					  ?>
@@ -138,7 +138,7 @@ include("config.php");
                                     <li><span class="text-secondary"><?php echo $row['9'];?></span> Kitchen</li>
                                 </ul>
                             </div> -->
-                            <h1 class="text-secondary my-4">Description</h4>
+                            <h1 class="text-secondary my-4"><?php echo $row['1'];?></h4>
                             <p><?php echo $row['2'];?></p>
                             
                             <!-- <h5 class="mt-5 mb-4 text-secondary">Property Summary</h5>
@@ -317,13 +317,13 @@ include("config.php");
                             <ul class="property_list_widget">
 							
 								<?php 
-								$query=mysqli_query($con,"SELECT * FROM `berita` ORDER BY date DESC LIMIT 6");
+								$query=mysqli_query($con,"SELECT berita.*, admin.auser FROM `berita`, `admin` WHERE berita.uid = admin.aid ORDER BY date DESC LIMIT 6");
 										while($row=mysqli_fetch_array($query))
 										{
 								?>
                                 <li> <img src="admin/property/<?php echo $row['6'];?>" alt="pimage">
                                     <h6 class="text-secondary hover-text-primary text-capitalize"><a href="beritadetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h6>
-                                    <span class="font-14"><i class="fas fa-map-marker-alt icon-primary icon-small"></i> <?php echo $row['3'];?></span>
+                                    <span class="font-14"><i class="fas fa-user icon-primary icon-small"></i> <?php echo $row['auser'];?></span>
                                     
                                 </li>
                                 <?php } ?>

@@ -14,10 +14,10 @@ if(!isset($_SESSION['auser']))
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>LM Homes | About</title>
+        <title>Lihat Renungan</title>
 		
 		<!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/church.ico">
 		
 		<!-- Bootstrap CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -53,10 +53,10 @@ if(!isset($_SESSION['auser']))
 					<div class="page-header">
 						<div class="row">
 							<div class="col">
-								<h3 class="page-title">View About</h3>
+								<h3 class="page-title">Lihat Renungan</h3>
 								<ul class="breadcrumb">
 									<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-									<li class="breadcrumb-item active">View About</li>
+									<li class="breadcrumb-item active">Lihat Renungan</li>
 								</ul>
 							</div>
 						</div>
@@ -67,7 +67,7 @@ if(!isset($_SESSION['auser']))
 						<div class="col-sm-12">
 							<div class="card">
 								<div class="card-header">
-									<h4 class="card-title">List Of About</h4>
+									<h4 class="card-title">List Renungan</h4>
 									<?php 
 											if(isset($_GET['msg']))	
 											echo $_GET['msg'];
@@ -91,7 +91,7 @@ if(!isset($_SESSION['auser']))
 											</thead>
 											<?php
 													
-													$query=mysqli_query($con,"select * from about");
+													$query=mysqli_query($con,"select * from renungan");
 													$cnt=1;
 													while($row=mysqli_fetch_row($query))
 														{

@@ -1,5 +1,8 @@
 <?php 
 include("config.php");
+ini_set('session.cache_limiter','public');
+session_cache_limiter(false);
+session_start();
 $error="";
 $msg="";
 if(isset($_POST['send']))
@@ -57,7 +60,7 @@ if(isset($_POST['send']))
 
 <!--	Title
 	=========================================================-->
-<title>Ardes.Studio</title>
+<title>Kontak</title>
 </head>
 <body>
 

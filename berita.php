@@ -39,7 +39,7 @@ include("config.php");
 
 <!--	Title
 	=========================================================-->
-<title>Ardes.Studio</title>
+<title>Berita Gereja</title>
 </head>
 <body>
 
@@ -91,7 +91,7 @@ include("config.php");
                         <div class="row">
 						
 							<?php 
-							$query=mysqli_query($con,"SELECT berita.*, user.uname,user.utype,user.uimage FROM `berita`,`user` WHERE berita.uid=user.uid");
+							$query=mysqli_query($con,"SELECT berita.*, admin.auser FROM `berita`,`admin` WHERE berita.uid=admin.aid ORDER BY berita.pid DESC");
 								while($row=mysqli_fetch_array($query))
 								{
 							?>
@@ -105,9 +105,9 @@ include("config.php");
                                     <div class="featured-thumb-data shadow-one">
                                         <div class="p-4">
                                             <h5 class="text-secondary hover-text-primary mb-2 text-capitalize"><a href="beritadetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h5>
-                                            <span><?php echo $row['14'];?></span> </div>
+                                            <span><?php echo substr($row['2'], 0, 100); ?></span> </div>
                                         <div class="px-4 pb-4 d-inline-block w-100">
-                                            <div class="float-left text-capitalize"><i class="fas fa-user text-primary mr-1"></i>By : <?php echo $row['uname'];?></div>
+                                            <div class="float-left text-capitalize"><i class="fas fa-user text-primary mr-1"></i>By : <?php echo $row['auser'];?></div>
                                         </div>
                                     </div>
                                 </div>
@@ -123,16 +123,16 @@ include("config.php");
                             <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Berita Gereja Terkini</h4>
                             <ul class="property_list_widget">
 							
-								<?php 
-								$query=mysqli_query($con,"SELECT * FROM `berita` ORDER BY date DESC LIMIT 6");
-										while($row=mysqli_fetch_array($query))
-										{
-								?>
-                                <li> <img src="admin/property/<?php echo $row['6'];?>" alt="pimage">
-                                    <h6 class="text-secondary hover-text-primary text-capitalize"><a href="beritadetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h6>
-                                    <span class="font-14"><i class="fas fa-user text-primary mr-1"></i> <?php echo $row['3'];?></span>
-                                    
-                                </li>
+                                <?php 
+                                    $query=mysqli_query($con,"SELECT berita.*, admin.auser FROM `berita`, `admin` WHERE berita.uid = admin.aid ORDER BY date DESC LIMIT 6");
+                                            while($row=mysqli_fetch_array($query))
+                                            {
+                                    ?>
+                                    <li> <img src="admin/property/<?php echo $row['6'];?>" alt="pimage">
+                                        <h6 class="text-secondary hover-text-primary text-capitalize"><a href="beritadetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h6>
+                                        <span class="font-14"><i class="fas fa-user icon-primary icon-small"></i> <?php echo $row['auser'];?></span>
+                                        
+                                    </li>
                                 <?php } ?>
 
                             </ul>

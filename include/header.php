@@ -2,25 +2,9 @@
             <div class="top-header bg-secondary">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8">
-                            <ul class="top-contact list-text-white  d-table">
-                                
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="top-contact float-right">
-                                <ul class="list-text-white d-table">
-								<li><i class="fas fa-user text-primary mr-1"></i>
-								<?php  if(isset($_SESSION['uemail']))
-								{ ?>
-								<a href="logout.php">Logout</a>&nbsp;&nbsp;<?php } else { ?>
-								<a href="login.php">Login</a>&nbsp;&nbsp;
-								<?php } ?>
-								| </li>
-								<li><i class="fas fa-user text-primary mr-1"></i><a href="register.php"> Register</li>
-								</ul>
-                            </div>
-                        </div>
+                        <marquee behavior="scroll" direction="left" scrollamount="5" style="color: white;">
+                        Selamat datang di gereja kami - Tempat kedamaian dan kebersamaan untuk semua umat. Bersama-sama kita membangun komunitas yang kokoh dan saling mendukung.   
+                        </marquee>
                     </div>
                 </div>
             </div>

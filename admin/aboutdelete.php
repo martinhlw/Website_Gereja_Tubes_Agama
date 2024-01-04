@@ -3,7 +3,7 @@ include("config.php");
 $aid = $_GET['id'];
 
 // view code//
-$sql = "SELECT * FROM about where id='$aid'";
+$sql = "SELECT * FROM renungan where id='$aid'";
 $result = mysqli_query($con, $sql);
 while($row = mysqli_fetch_array($result))
 	{
@@ -15,16 +15,16 @@ while($row = mysqli_fetch_array($result))
 
 
 $msg="";
-$sql = "DELETE FROM about WHERE id = {$aid}";
+$sql = "DELETE FROM renungan WHERE id = {$aid}";
 $result = mysqli_query($con, $sql);
 if($result == true)
 {
-	$msg="<p class='alert alert-success'>About Deleted</p>";
+	$msg="<p class='alert alert-success'>Renungan Berhasil dihapus</p>";
 	header("Location:aboutview.php?msg=$msg");
 }
 else
 {
-	$msg="<p class='alert alert-warning'>About not Deleted</p>";
+	$msg="<p class='alert alert-warning'>Hapus Renungan tidak berhasil</p>";
 		header("Location:aboutview.php?msg=$msg");
 }
 

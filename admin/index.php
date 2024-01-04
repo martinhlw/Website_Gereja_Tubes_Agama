@@ -10,7 +10,7 @@
 		if(!empty($user) && !empty($pass))
 		{
 			$query = "SELECT auser, apass FROM admin WHERE auser='$user' AND apass='$pass'";
-			$result = mysqli_query($con,$query)or die(mysqli_error());
+			$result = mysqli_query($con,$query)or die(mysqli_error($con));
 			$num_row = mysqli_num_rows($result);
 			$row=mysqli_fetch_array($result);
 			if( $num_row ==1 )
@@ -37,7 +37,7 @@
         <title>Admin - Login</title>
 		
 		<!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/church.ico">
 
 		<!-- Bootstrap CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">

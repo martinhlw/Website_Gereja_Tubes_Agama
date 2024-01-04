@@ -40,9 +40,9 @@ if (isset($_POST['add'])) {
     $result = mysqli_query($con, $sql);
 
     if ($result) {
-        $msg = "<p class='alert alert-success'>Property Inserted Successfully</p>";
+        $msg = "<p class='alert alert-success'>Berita Gereja Berhasil Ditambahkan!</p>";
     } else {
-        $error = "<p class='alert alert-warning'>Property Not Inserted Some Error</p>";
+        $error = "<p class='alert alert-warning'>Berita Gereja Gagal Ditambahkan!</p>";
     }
 }
 ?>
@@ -51,10 +51,10 @@ if (isset($_POST['add'])) {
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>LM HOMES | Property</title>
+        <title>Tambah Berita Gereja</title>
 		
 		<!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/church.ico">
 		
 		<!-- Bootstrap CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -84,7 +84,7 @@ if (isset($_POST['add'])) {
 					<div class="page-header">
 						<div class="row">
 							<div class="col">
-								<h3 class="page-title">Property</h3>
+								<h3 class="page-title">Berita Gereja</h3>
 								<ul class="breadcrumb">
 									<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
 									<li class="breadcrumb-item active">Property</li>

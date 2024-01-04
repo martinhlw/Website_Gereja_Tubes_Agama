@@ -14,10 +14,10 @@ if(!isset($_SESSION['auser']))
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>Ventura - Dashboard</title>
+        <title>Admin - Dashboard</title>
 		
 		<!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/church.ico">
 		
 		<!-- Bootstrap CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -70,21 +70,27 @@ if(!isset($_SESSION['auser']))
 						<div class="col-xl-3 col-sm-6 col-12">
 							<div class="card">
 								<div class="card-body">
-									<div class="dash-widget-header">
-										<span class="dash-widget-icon bg-primary">
+								<div class="dash-widget-header">
+										<span class="dash-widget-icon bg-danger">
 											<i class="fe fe-users"></i>
 										</span>
+								</div>
+								<div class="dash-widget-info">
+										<?php 
+											$userCountQuery = mysqli_query($con, "SELECT COUNT(*) as user_count FROM user");
+											$userCountRow = mysqli_fetch_assoc($userCountQuery);
+											$totalUsers = $userCountRow['user_count'];
+											{
+										?>
 										
-									</div>
-									<div class="dash-widget-info">
-										
-										<h3>1234</h3>
+										<h3><?php echo $totalUsers; ?></h3>
 										
 										<h6 class="text-muted">Users</h6>
 										<div class="progress progress-sm">
-											<div class="progress-bar bg-primary w-50"></div>
+											<div class="progress-bar bg-success w-50"></div>
 										</div>
-									</div>
+										<?php } ?>
+									</div>	
 								</div>
 							</div>
 						</div>
@@ -98,14 +104,21 @@ if(!isset($_SESSION['auser']))
 										
 									</div>
 									<div class="dash-widget-info">
+										<?php 
+											$userCountQuery = mysqli_query($con, "SELECT COUNT(*) as berita_count FROM berita");
+											$userCountRow = mysqli_fetch_assoc($userCountQuery);
+											$totalBerita = $userCountRow['berita_count'];
+											{
+										?>
 										
-										<h3>123</h3>
+										<h3><?php echo $totalBerita; ?></h3>
 										
-										<h6 class="text-muted">Request Blood</h6>
+										<h6 class="text-muted">Berita Gereja</h6>
 										<div class="progress progress-sm">
 											<div class="progress-bar bg-success w-50"></div>
 										</div>
-									</div>
+										<?php } ?>
+									</div>	
 								</div>
 							</div>
 						</div>
@@ -119,14 +132,21 @@ if(!isset($_SESSION['auser']))
 										
 									</div>
 									<div class="dash-widget-info">
+										<?php 
+											$userCountQuery = mysqli_query($con, "SELECT COUNT(*) as renungan_count FROM renungan");
+											$userCountRow = mysqli_fetch_assoc($userCountQuery);
+											$totalRenungan = $userCountRow['renungan_count'];
+											{
+										?>
 										
-										<h3>432</h3>
+										<h3><?php echo $totalRenungan; ?></h3>
 										
-										<h6 class="text-muted">Donor</h6>
+										<h6 class="text-muted">Renungan Harian</h6>
 										<div class="progress progress-sm">
-											<div class="progress-bar bg-danger w-50"></div>
+											<div class="progress-bar bg-success w-50"></div>
 										</div>
-									</div>
+										<?php } ?>
+									</div>	
 								</div>
 							</div>
 						</div>
@@ -140,14 +160,21 @@ if(!isset($_SESSION['auser']))
 										
 									</div>
 									<div class="dash-widget-info">
+										<?php 
+											$userCountQuery = mysqli_query($con, "SELECT COUNT(*) as contact_count FROM contact");
+											$userCountRow = mysqli_fetch_assoc($userCountQuery);
+											$totalContact = $userCountRow['contact_count'];
+											{
+										?>
 										
-										<h3>342</h3>
+										<h3><?php echo $totalContact; ?></h3>
 										
-										<h6 class="text-muted">Contact Message</h6>
+										<h6 class="text-muted">Feedback</h6>
 										<div class="progress progress-sm">
-											<div class="progress-bar bg-warning w-50"></div>
+											<div class="progress-bar bg-success w-50"></div>
 										</div>
-									</div>
+										<?php } ?>
+									</div>	
 								</div>
 							</div>
 						</div>
@@ -157,28 +184,28 @@ if(!isset($_SESSION['auser']))
 						<div class="col-md-12 col-lg-6">
 						
 							<!-- Sales Chart -->
-							<div class="card card-chart">
+							<!-- <div class="card card-chart">
 								<div class="card-header">
 									<h4 class="card-title">Sales Overview</h4>
 								</div>
 								<div class="card-body">
 									<div id="morrisArea"></div>
 								</div>
-							</div>
+							</div> -->
 							<!-- /Sales Chart -->
 							
 						</div>
 						<div class="col-md-12 col-lg-6">
 						
 							<!-- Invoice Chart -->
-							<div class="card card-chart">
+							<!-- <div class="card card-chart">
 								<div class="card-header">
 									<h4 class="card-title">Order Status</h4>
 								</div>
 								<div class="card-body">
 									<div id="morrisLine"></div>
 								</div>
-							</div>
+							</div> -->
 							<!-- /Invoice Chart -->
 							
 						</div>	

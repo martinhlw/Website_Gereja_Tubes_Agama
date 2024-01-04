@@ -13,11 +13,11 @@ if(!isset($_SESSION['auser']))
 				<!-- Logo -->
                 <div class="header-left">
                     <a href="dashboard.php" class="logo">
-					<img src="images/img/log.png">
+					<img src="..\images\logo\Logo-Gereja.png">
 					</a>
 					<a href="dashboard.php" class="logo logo-small">
 						
-						<img src="images/img/favicon.png" alt="Logo">
+						<img src="..\images\logo\Logo-Gereja.png" alt="Logo">
 					</a>
                 </div>
 				<!-- /Logo -->
@@ -88,7 +88,7 @@ if(!isset($_SESSION['auser']))
 							</li>
 						
 							<li class="submenu">
-								<a href="#"><i class="fe fe-user"></i> <span> Authentication </span> <span class="menu-arrow"></span></a>
+								<a href="#"><i class="fe fe-key"></i> <span> Authentication </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
 									<li><a href="index.php"> Login </a></li>
 									<li><a href="register.php"> Register </a></li>
@@ -104,55 +104,42 @@ if(!isset($_SESSION['auser']))
 								<ul style="display: none;">
 									<li><a href="adminlist.php"> Admin </a></li>
 									<li><a href="userlist.php"> Users </a></li>
-									<li><a href="useragent.php"> Agent </a></li>
-									<li><a href="userbuilder.php"> Builder </a></li>
 								</ul>
 							</li>
 						
 							<li class="menu-title"> 
-								<span>Property</span>
+								<span>Berita Gereja</span>
 							</li>
 							<li class="submenu">
-								<a href="#"><i class="fe fe-user"></i> <span> Property</span> <span class="menu-arrow"></span></a>
+								<a href="#"><i class="fe fe-book"></i> <span> Berita Gereja</span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="propertyadd.php"> Add Property</a></li>
-									<li><a href="propertyview.php"> View Property </a></li>
+									<li><a href="propertyadd.php">Tambah Berita Gereja</a></li>
+									<li><a href="propertyview.php"> Lihat Berita Gereja </a></li>
 									
 								</ul>
 							</li>
-							
 							<li class="menu-title"> 
-								<span>State & City</span>
+								<span>Renungan</span>
 							</li>
-						
 							<li class="submenu">
-								<a href="#"><i class="fe fe-user"></i> <span>State & City</span> <span class="menu-arrow"></span></a>
+								<a href="#"><i class="fe fe-book"></i> <span> Renungan </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="stateadd.php"> State </a></li>
-									<li><a href="cityadd.php"> City </a></li>
+									<li><a href="aboutadd.php"> Renungan </a></li>
+									<li><a href="aboutview.php"> Lihat Renungan </a></li>
 								</ul>
 							</li>
 							
 							<li class="menu-title"> 
-								<span>Query</span>
+								<span>Kontak</span>
 							</li>
 							<li class="submenu">
-								<a href="#"><i class="fe fe-user"></i> <span> Query </span> <span class="menu-arrow"></span></a>
+								<a href="#"><i class="fe fe-user"></i> <span> Kontak dan Feedback </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="contactview.php"> Contact </a></li>
+									<li><a href="contactview.php">Kontak</a></li>
 									<li><a href="feedbackview.php"> Feedback </a></li>
 								</ul>
 							</li>
-							<li class="menu-title"> 
-								<span>About</span>
-							</li>
-							<li class="submenu">
-								<a href="#"><i class="fe fe-user"></i> <span> About </span> <span class="menu-arrow"></span></a>
-								<ul style="display: none;">
-									<li><a href="aboutadd.php"> About </a></li>
-									<li><a href="aboutview.php"> View About </a></li>
-								</ul>
-							</li>
+
 							
 						</ul>
 					</div>

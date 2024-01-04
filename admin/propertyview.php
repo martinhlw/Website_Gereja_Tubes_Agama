@@ -13,10 +13,10 @@ if (!isset($_SESSION['auser'])) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <title>LM HOMES | Property</title>
+    <title>Lihat Berita Gereja</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/church.ico">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -46,10 +46,10 @@ if (!isset($_SESSION['auser'])) {
             <div class="page-header">
                 <div class="row">
                     <div class="col">
-                        <h3 class="page-title">Property</h3>
+                        <h3 class="page-title">Berita Gereja</h3>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                            <li class="breadcrumb-item active">Property</li>
+                            <li class="breadcrumb-item active">Berita Gereja</li>
                         </ul>
                     </div>
                 </div>
@@ -60,7 +60,7 @@ if (!isset($_SESSION['auser'])) {
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="header-title mt-0 mb-4">Property View</h4>
+                            <h4 class="header-title mt-0 mb-4">Lihat Berita Gereja</h4>
                             <?php
                             if (isset($_GET['msg']))
                                 echo $_GET['msg'];
@@ -74,7 +74,7 @@ if (!isset($_SESSION['auser'])) {
 
                                 <tbody>
                                     <?php
-                                    $query = mysqli_query($con, "SELECT * FROM berita"); // Ganti "berita" dengan nama tabel yang benar
+                                    $query = mysqli_query($con, "SELECT * FROM berita ORDER BY pid DESC"); // Ganti "berita" dengan nama tabel yang benar
                                     while ($row = mysqli_fetch_assoc($query)) {
                                     ?>
                                         <tr>

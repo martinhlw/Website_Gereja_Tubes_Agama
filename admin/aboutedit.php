@@ -38,10 +38,10 @@ if(isset($_POST['update']))
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>Ventura - Vertical Form</title>
+        <title>Edit Renungan</title>
 		
 		<!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/church.ico">
 		
 		<!-- Bootstrap CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -99,7 +99,7 @@ if(isset($_POST['update']))
 								</div>
 								<?php 
 								$aid = $_GET['id'];
-								$sql = "SELECT * FROM about where id = {$aid}";
+								$sql = "SELECT * FROM renungan where id = {$aid}";
 								$result = mysqli_query($con, $sql);
 								while($row = mysqli_fetch_row($result))
 								{
@@ -108,7 +108,7 @@ if(isset($_POST['update']))
 								<div class="card-body">
 										<div class="row">
 											<div class="col-xl-12">
-												<h5 class="card-title">About Us </h5>
+												<h5 class="card-title">Renungan </h5>
 												<div class="form-group row">
 													<label class="col-lg-2 col-form-label">Title</label>
 													<div class="col-lg-9">
