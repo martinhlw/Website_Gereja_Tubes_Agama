@@ -98,7 +98,7 @@ include("config.php");
 									
                             <div class="col-md-6">
                                 <div class="featured-thumb hover-zoomer mb-4">
-                                    <div class="overlay-black overflow-hidden position-relative"> <img src="admin/property/<?php echo $row['18'];?>" alt="pimage">
+                                    <div class="overlay-black overflow-hidden position-relative"> <img src="admin/property/<?php echo $row['7'];?>" alt="pimage">
                                 
                                         
                                     </div>
@@ -128,9 +128,9 @@ include("config.php");
 										while($row=mysqli_fetch_array($query))
 										{
 								?>
-                                <li> <img src="admin/property/<?php echo $row['18'];?>" alt="pimage">
+                                <li> <img src="admin/property/<?php echo $row['6'];?>" alt="pimage">
                                     <h6 class="text-secondary hover-text-primary text-capitalize"><a href="beritadetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h6>
-                                    <span class="font-14"><i class="fas fa-user text-primary mr-1"></i> <?php echo $row['14'];?></span>
+                                    <span class="font-14"><i class="fas fa-user text-primary mr-1"></i> <?php echo $row['3'];?></span>
                                     
                                 </li>
                                 <?php } ?>

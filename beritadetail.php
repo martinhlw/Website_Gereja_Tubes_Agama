@@ -100,19 +100,19 @@ include("config.php");
                             <div class="col-md-12">
                                 <div id="single-property" style="width:1200px; height:700px; margin:30px auto 50px;"> 
                                     <!-- Slide 1-->
-                                    <div class="ls-slide" data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;"> <img width="1920" height="1080" src="admin/property/<?php echo $row['18'];?>" class="ls-bg" alt="" /> </div>
+                                    <div class="ls-slide" data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;"> <img width="370" height="260" src="admin/property/<?php echo $row['6'];?>" class="ls-bg" alt="" /> </div>
                                     
                                     <!-- Slide 2-->
-                                    <div class="ls-slide" data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;"> <img width="1920" height="1080" src="admin/property/<?php echo $row['19'];?>" class="ls-bg" alt="" /> </div>
+                                    <div class="ls-slide" data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;"> <img width="370" height="260" src="admin/property/<?php echo $row['7'];?>" class="ls-bg" alt="" /> </div>
                                     
                                     <!-- Slide 3-->
-                                    <div class="ls-slide" data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;"> <img width="1920" height="1080" src="admin/property/<?php echo $row['20'];?>" class="ls-bg" alt="" /> </div>
+                                    <div class="ls-slide" data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;"> <img width="370" height="260" src="admin/property/<?php echo $row['8'];?>" class="ls-bg" alt="" /> </div>
 									
 									<!-- Slide 4-->
-									<div class="ls-slide" data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;"> <img width="1920" height="1080" src="admin/property/<?php echo $row['21'];?>" class="ls-bg" alt="" /> </div>
+									<div class="ls-slide" data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;"> <img width="370" height="260" src="admin/property/<?php echo $row['9'];?>" class="ls-bg" alt="" /> </div>
 									
 									<!-- Slide 5-->
-									<div class="ls-slide" data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;"> <img width="1920" height="1080" src="admin/property/<?php echo $row['22'];?>" class="ls-bg" alt="" /> </div>
+									<div class="ls-slide" data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;"> <img width="370" height="260" src="admin/property/<?php echo $row['10'];?>" class="ls-bg" alt="" /> </div>
                                 </div>
                             </div>
                         </div>
@@ -321,9 +321,9 @@ include("config.php");
 										while($row=mysqli_fetch_array($query))
 										{
 								?>
-                                <li> <img src="admin/property/<?php echo $row['18'];?>" alt="pimage">
+                                <li> <img src="admin/property/<?php echo $row['6'];?>" alt="pimage">
                                     <h6 class="text-secondary hover-text-primary text-capitalize"><a href="beritadetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h6>
-                                    <span class="font-14"><i class="fas fa-map-marker-alt icon-primary icon-small"></i> <?php echo $row['14'];?></span>
+                                    <span class="font-14"><i class="fas fa-map-marker-alt icon-primary icon-small"></i> <?php echo $row['3'];?></span>
                                     
                                 </li>
                                 <?php } ?>

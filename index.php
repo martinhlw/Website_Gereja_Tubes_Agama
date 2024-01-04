@@ -194,7 +194,7 @@ include("config.php");
 								
                                     <div class="col-md-6 col-lg-4">
                                         <div class="featured-thumb hover-zoomer mb-4">
-                                            <div class="overlay-black overflow-hidden position-relative"> <img src="admin/property/<?php echo $row['18'];?>" alt="pimage"></div>
+                                            <div class="overlay-black overflow-hidden position-relative"> <img src="admin/property/<?php echo $row['7'];?>" alt="pimage"></div>
                                             <div class="featured-thumb-data shadow-one">
                                                 <div class="p-3">
                                                     <h5 class="text-secondary hover-text-primary mb-2 text-capitalize"><a href="beritadetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h5>
