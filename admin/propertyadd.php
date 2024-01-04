@@ -57,15 +57,15 @@ if(isset($_POST['add']))
 	$temp_name6 =$_FILES['fimage1']['tmp_name'];
 	$temp_name7 =$_FILES['fimage2']['tmp_name'];
 	
-	move_uploaded_file($temp_name,"berita/$aimage");
-	move_uploaded_file($temp_name1,"berita/$aimage1");
-	move_uploaded_file($temp_name2,"berita/$aimage2");
-	move_uploaded_file($temp_name3,"berita/$aimage3");
-	move_uploaded_file($temp_name4,"berita/$aimage4");
+	move_uploaded_file($temp_name,"property/$aimage");
+	move_uploaded_file($temp_name1,"property/$aimage1");
+	move_uploaded_file($temp_name2,"property/$aimage2");
+	move_uploaded_file($temp_name3,"property/$aimage3");
+	move_uploaded_file($temp_name4,"property/$aimage4");
 	
-	move_uploaded_file($temp_name5,"berita/$fimage");
-	move_uploaded_file($temp_name6,"berita/$fimage1");
-	move_uploaded_file($temp_name7,"berita/$fimage2");
+	move_uploaded_file($temp_name5,"property/$fimage");
+	move_uploaded_file($temp_name6,"property/$fimage1");
+	move_uploaded_file($temp_name7,"property/$fimage2");
 	
 	$sql="insert into berita (title,pcontent,type,bhk,stype,bedroom,bathroom,balcony,kitchen,hall,floor,size,price,location,city,state,feature,pimage,pimage1,pimage2,pimage3,pimage4,uid,status,mapimage,topmapimage,groundmapimage,totalfloor)
 	values('$title','$content','$ptype','$bhk','$stype','$bed','$bath','$balc','$kitc','$hall','$floor','$asize','$price',

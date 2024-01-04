@@ -197,7 +197,7 @@ include("config.php");
                                             <div class="overlay-black overflow-hidden position-relative"> <img src="admin/property/<?php echo $row['18'];?>" alt="pimage"></div>
                                             <div class="featured-thumb-data shadow-one">
                                                 <div class="p-3">
-                                                    <h5 class="text-secondary hover-text-primary mb-2 text-capitalize"><a href="propertydetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h5>
+                                                    <h5 class="text-secondary hover-text-primary mb-2 text-capitalize"><a href="beritadetail.php?pid=<?php echo $row['0'];?>"><?php echo $row['1'];?></a></h5>
                                                     <span class="location text-capitalize"><?php echo $row['14'];?></span> </div>
                                                 <!-- <div class="bg-gray quantity px-4 pt-4">
                                                     <ul>
