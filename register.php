@@ -149,11 +149,11 @@ if(isset($_REQUEST['reg']))
 										<input type="radio" class="form-check-input" name="utype" value="user" checked>User
 									  </label>
 									</div>
-									<div class="form-check-inline">
+									<!-- <div class="form-check-inline">
 									  <label class="form-check-label">
-										<input type="radio" class="form-check-input" name="utype" value="agent">Admin
+										<input type="radio" class="form-check-input" name="utype" value="agent">Majelis
 									  </label>
-									</div>
+									</div> -->
 									
 									<div class="form-group">
 										<label class="col-form-label"><b>User Image</b></label>
