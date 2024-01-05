@@ -169,7 +169,7 @@ if(!isset($_SESSION['auser']))
 										
 										<h3><?php echo $totalContact; ?></h3>
 										
-										<h6 class="text-muted">Feedback</h6>
+										<h6 class="text-muted">Kontak</h6>
 										<div class="progress progress-sm">
 											<div class="progress-bar bg-success w-50"></div>
 										</div>
