@@ -123,7 +123,7 @@ if(isset($_POST['insert']))
                 <div class="dashboard-personal-info p-5 bg-white">
                     <form action="#" method="post">
                         <h5 class="text-secondary border-bottom-on-white pb-3 mb-4">Application Feedback Form</h5>
-                        <p>Bantu kamu untuk lebih dapat mengembangkan aplikasi kami!</p>
+                        <p>Bantu kami untuk lebih dapat mengembangkan aplikasi kami!</p>
 						<?php echo $msg; ?><?php echo $error; ?>
                         <div class="row">
                             <div class="col-lg-6 col-md-12">

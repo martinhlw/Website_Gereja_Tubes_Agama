@@ -101,10 +101,10 @@ if (isset($_POST['add'])) {
 					<div class="page-header">
 						<div class="row">
 							<div class="col">
-								<h3 class="page-title">Property</h3>
+								<h3 class="page-title">Berita Gereja</h3>
 								<ul class="breadcrumb">
 									<li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-									<li class="breadcrumb-item active">Property</li>
+									<li class="breadcrumb-item active">Berita Gereja</li>
 								</ul>
 							</div>
 						</div>
@@ -115,7 +115,7 @@ if (isset($_POST['add'])) {
 						<div class="col-md-12">
 							<div class="card">
 								<div class="card-header">
-									<h4 class="card-title">Update Property Details</h4>
+									<h4 class="card-title">Update Berita Gereja</h4>
 									<?php echo $error; ?>
 									<?php echo $msg; ?>
 								</div>
@@ -130,7 +130,7 @@ if (isset($_POST['add'])) {
 								?>
 												
 								<div class="card-body">
-									<h5 class="card-title">Property Detail</h5>
+									<h5 class="card-title">Detail berita</h5>
 										<div class="row">
 											<div class="col-xl-12">
 												<div class="form-group row">
@@ -152,26 +152,33 @@ if (isset($_POST['add'])) {
 
 											</div>
 										</div>
-										<h4 class="card-title">Location</h4>
+										<h4 class="card-title">Lokasi</h4>
 										<div class="row">
 											<div class="col-xl-6">
 												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">City</label>
+													<label class="col-lg-3 col-form-label">Kota</label>
 													<div class="col-lg-9">
 														<input type="text" class="form-control" name="city" required value="<?php echo $row['4']; ?>">
 													</div>
 												</div>
 												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">State</label>
+													<label class="col-lg-3 col-form-label">Negara</label>
 													<div class="col-lg-9">
 														<input type="text" class="form-control" name="state" required value="<?php echo $row['5']; ?>">
 													</div>
 												</div>
+												<div class="form-group row">
+													<label class="col-lg-3 col-form-label">Alamat</label>
+													<div class="col-lg-9">
+														<input type="text" class="form-control" name="location" required value="<?php echo $row['3']; ?>">
+													</div>
+												</div>
+												
 											</div>
 										
 										</div>
 												
-										<h4 class="card-title">Image & Status</h4>
+										<h4 class="card-title">Photo</h4>
 										<div class="row">
 											<div class="col-xl-6">
 												
